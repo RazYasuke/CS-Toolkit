@@ -1,2 +1,0 @@
-# CS-Toolkit
-Cybersecurity Toolkit
