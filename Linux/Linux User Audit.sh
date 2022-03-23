@@ -7,7 +7,7 @@ NC='\033[0m' # No Color
 TDate=$(date +"%d_%m_%y_%H_%M")
 BName="BloodHoundLog_"$TDate".txt"
 printf  "${RED}Initializing Linux System User and Access Audit...\n${NC}"
-printf "${RED}Enter Exact Admin User Name\n${NC}"
+printf "Enter Exact Admin User Name\n"
 read UName
 cd /home/$UName/
 if [[ -d /home/$UName/research ]] 
@@ -40,5 +40,21 @@ then
     ls /home/$UName/Desktop >> $BName
     ls /home/$UName/Downloads >> $BName
 else
-
+    printf "${RED} The Desktop and Download files do not exist\n${NC}"
+    printf "${RED} The Desktop and Download files do not exist\n User Home Directory below.${NC}" >> $BName
+    ls /home/$UName/ >> $BName
 fi
+
+if [[ -d /bin/cat && /bin/ps ]]
+then 
+    printf "The cat and ps binary files exist\n"
+    printf "The cat and ps binary files exist\n" >> $BName
+    ls /bin/cat >> $BName
+    ls /bin/ps >> $BName
+else
+    printf "${RED} The cat and ps files do not exist\n${NC}"
+    printf "${RED} The cat and ps files do not exist\n Bin Directory below.${NC}" >> $BName
+    ls /bin >> $BName
+fi
+printf "---Temp Directory---"
+ls /tmp >> $BName
