@@ -1,3 +1,4 @@
+#WORK IN PROGRESS
 #!/bin/bash
 
 RED='\033[0;31m'
