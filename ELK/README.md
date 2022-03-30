@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![ELK Diagram](https://github.com/RazYasuke/CS-Toolkit/ELK/Diagrams/ELKStackNetworkDiagram.drawio.png)
+[ELK Diagram](https://github.com/RazYasuke/CS-Toolkit/ELK/Diagrams/ELKStackNetworkDiagram.drawio.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Yaml source file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -33,7 +33,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Metricbeat is a lightweight shipper that you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+
 
 | Name       | Function   | IP Address | Operating System                           |
 |------------|------------|------------|--------------------------------------------|
@@ -106,6 +106,4 @@ SSH into the control node and follow the steps below:
  
 - Navigate to http://[your.ELK-VM.External.IP]:5601/app/kibana in order to check that the ELK server is running.
 
-Specific commands the user will need to run to download the playbook, update the files, etc._
-- Run filebeat playbook: ansible-playbook filebeat-playbook.yml
-- 
+Run my [ELK Setup](https://github.com/RazYasuke/CS-Toolkit/tree/main/ELK/Deployment/Linux/ELK_Deployment.sh) script to deploy the ELK Stack and configure the network.
