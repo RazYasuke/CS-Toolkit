@@ -106,4 +106,4 @@ SSH into the control node and follow the steps below:
  
 - Navigate to http://[your.ELK-VM.External.IP]:5601/app/kibana in order to check that the ELK server is running.
 
-Run my [ELK Setup](https://github.com/RazYasuke/CS-Toolkit/tree/main/ELK/Deployment/Linux/ELK_Deployment.sh) script to deploy the ELK Stack and configure the network.
+Run my [ELK Setup](https://github.com/RazYasuke/CS-Toolkit/tree/main/ELK/Deployment/Linux/ELK_Setup.sh) script to deploy the ELK Stack and configure the network.
